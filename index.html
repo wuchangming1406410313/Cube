@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        @keyframes ww {
+            from{
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+            to{
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+        }
+        .box{
+            width: 400px;
+            height: 400px;
+            /*background-color: red;*/
+            margin: 100px auto;
+            text-align: center;
+        }
+        ul{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin-top: 100px;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: rotateX(30deg) rotateY(30deg) ;
+            animation: ww 10s linear infinite normal;
+        }
+        ul li{
+            list-style: none;
+            position: absolute;
+        }
+        ul .big{
+            width: 200px;
+            height: 200px;
+            /*background-color: gold;*/
+            background-color: #ccc;
+            opacity: 0.9;
+            border: 2px solid #000;
+            box-sizing: border-box;
+            transition: all .5s ease-out;
+        }
+        ul .min{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            top: 50px;
+            left: 50px;
+            border: 2px solid #000;
+            box-sizing: border-box;
+            transition: all 2s ease-out;
+        }
+        ul li:nth-child(1){
+            transform: rotateX(90deg) translateZ(100px);
+            /*background-color: gold;*/
+        }
+        ul li:nth-child(2){
+            transform: rotateX(180deg) translateZ(100px);
+            /*background-color: aqua;*/
+        }
+        ul li:nth-child(3){
+            transform: rotateX(270deg) translateZ(100px);
+            /*background-color: goldenrod;*/
+        }
+        ul li:nth-child(4){
+            transform: rotateX(360deg) translateZ(100px);
+            /*background-color: darkmagenta;*/
+        }
+        ul li:nth-child(5){
+            transform: rotateY(90deg) translateZ(100px);
+            /*background-color: black;*/
+        }
+        ul li:nth-child(6){
+            transform: rotateY(90deg) translateZ(-100px);
+            /*background-color: black;*/
+        }
+
+
+
+        ul li:nth-child(7){
+            transform: rotateX(90deg) translateZ(50px);
+            /*background-color: gold;*/
+        }
+        ul li:nth-child(8){
+            transform: rotateX(180deg) translateZ(50px);
+            /*background-color: aqua;*/
+        }
+        ul li:nth-child(9){
+            transform: rotateX(270deg)  translateZ(50px);
+            /*background-color: goldenrod;*/
+        }
+        ul li:nth-child(10){
+            transform: rotateX(360deg)  translateZ(50px);
+            /*background-color: darkmagenta;*/
+        }
+        ul li:nth-child(11){
+            transform: rotateY(90deg) translateZ(50px);
+            /*background-color: black;*/
+        }
+        ul li:nth-child(12){
+            transform: rotateY(90deg)  translateZ(-50px);
+            /*background-color: black;*/
+        }
+        ul:hover{
+            animation-play-state: paused;
+        }
+        ul:hover li:nth-child(1){
+            transform: rotateX(90deg) translateZ(200px);
+            /*background-color: gold;*/
+        }
+        ul:hover li:nth-child(2){
+            transform: rotateX(180deg) translateZ(200px);
+            /*background-color: gold;*/
+        }
+        ul:hover li:nth-child(3){
+            transform: rotateX(270deg) translateZ(200px);
+            /*background-color: gold;*/
+        }
+        ul:hover li:nth-child(4){
+            transform: rotateX(360deg) translateZ(200px);
+            /*background-color: gold;*/
+        }
+        ul:hover li:nth-child(5){
+            transform: rotateY(90deg) translateZ(200px);
+            /*background-color: gold;*/
+        }
+        ul:hover li:nth-child(6){
+            transform: rotateY(90deg) translateZ(-200px);
+            /*background-color: gold;*/
+        }
+
+
+
+
+
+
+          ul:hover li:nth-child(7){
+            transform: rotateX(90deg) translateZ(300px);
+            /*background-color: gold;*/
+        }
+        ul:hover li:nth-child(8){
+            transform: rotateX(180deg) translateZ(300px);
+            /*background-color: aqua;*/
+        }
+        ul:hover li:nth-child(9){
+            transform: rotateX(270deg) translateZ(300px);
+            /*background-color: goldenrod;*/
+        }
+        ul:hover li:nth-child(10){
+            transform: rotateX(360deg) translateZ(300px);
+            /*background-color: darkmagenta;*/
+        }
+        ul:hover li:nth-child(11){
+            transform: rotateY(90deg) translateZ(300px);
+            /*background-color: black;*/
+        }
+        ul:hover li:nth-child(12){
+            transform: rotateY(90deg) translateZ(-300px);
+            /*background-color: black;*/
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <ul>
+        <li class="big"></li>
+        <li class="big"></li>
+        <li class="big"></li>
+        <li class="big"></li>
+        <li class="big"></li>
+        <li class="big"></li>
+        <li class="min"></li>
+        <li class="min"></li>
+        <li class="min"></li>
+        <li class="min"></li>
+        <li class="min"></li>
+        <li class="min"></li>
+    </ul>
+</div>
+</body>
+</html>
